@@ -96,7 +96,7 @@ int main() {
 
 	if(isCyclePresent(head)) {
 		cout << "Cycle found!" << endl;
-		// removeCycle(head);
+		removeCycle(head);
 		printLinkedList(head);
 	} else {
 		cout << "Cycle not found!" << endl;

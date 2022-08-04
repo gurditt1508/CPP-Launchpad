@@ -46,7 +46,7 @@ bool isCyclePresent(node* head) {
 
 }
 
-void removeCycle(node* head) {
+void removeCycle(node*& head) {
 
 
 	// 1. find the meeting point

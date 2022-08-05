@@ -28,7 +28,7 @@ public:
 
 	void pop(){
 
-		if(t == -1){
+		if(t == -1){ //underflow
 			return;
 		}
 		t = t-1;

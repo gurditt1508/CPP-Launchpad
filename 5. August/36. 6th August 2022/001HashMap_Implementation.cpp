@@ -29,7 +29,7 @@ class HashMap{
 	int M; //hash table size
 	double L; //load factor threshold
 
-	node** T; //pointer to the dynamic array tha represents the hash table
+	node** T; //pointer to the dynamic array that represents the hash table
 
 	int hashFn(int K){
 		//transform K into a hash index

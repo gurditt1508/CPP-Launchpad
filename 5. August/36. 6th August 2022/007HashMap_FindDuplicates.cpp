@@ -20,7 +20,7 @@ int findDuplicate(vector<int> v) {
 	slow = v[0];
 	while(slow != fast) {
 		slow = v[slow];
-		fast = v[fast];;
+		fast = v[fast];
 	} 
 
 	return slow;

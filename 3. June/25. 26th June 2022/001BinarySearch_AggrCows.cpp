@@ -35,13 +35,13 @@ bool canPlaceCows(int n, int c, int* pos, int m) {
 
 int largestMinDist(int n, int c, int* pos) {
 
-	int s = INT_MAX; // for the tightest lower-bound, place the two cows in stalls closest to each other
+	int s = 1; // for the tightest lower-bound, place the two cows in stalls closest to each other
 	int e = pos[n-1]-pos[0]; // for the tightest upper-bound, place the two cows at the extreme positions
-	for(int i=1; i<n; i++) {
-		if(pos[i]-pos[i-1] < s) {
-			s = pos[i]-pos[i-1];
-		}
-	}
+	// for(int i=1; i<n; i++) { //if you keep s = 1; you don't need to perform this loop, if you keep s = INT_MAX, you do.
+	// 	if(pos[i]-pos[i-1] < s) {
+	// 		s = pos[i]-pos[i-1];
+	// 	}
+	//}
 
 	int ans;
 

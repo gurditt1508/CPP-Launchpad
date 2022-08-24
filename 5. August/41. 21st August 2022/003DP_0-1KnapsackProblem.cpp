@@ -50,11 +50,12 @@ int maxProfitBottomUp(vector<int> weights, vector<int> profits, int N, int W) {
 	vector<vector<int>> dp(N+1, vector<int>(W+1));
 
 	for(int i=0; i<=N; i++) {
-		dp[i][0] = 0;
+		dp[i][0] = 0; //if capacity is 0, you can't steal anything
 	}
 
 	for(int j=0; j<=W; j++) {
-		dp[N][j] = 0;
+		dp[N][j] = 0; //if you have excluded all the items, what will
+					  //you steal?
 	}
 
 	for(int i=N-1; i>=0; i--) {

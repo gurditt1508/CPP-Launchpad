@@ -48,7 +48,7 @@ class graph {
 
 			list<T> neighbourList = neighbourMap[s];
 
-			// visited unvisited vertices reachable from 's'
+			// visit unvisited vertices reachable from 's'
 
 			for(T neighbour : neighbourList) {
 				if(visited.find(neighbour) == visited.end()) {

@@ -59,7 +59,7 @@ class graph {
 				}
 			}
 
-			// remove 'source' from statckState
+			// remove 'source' from stackState
 			stackState.erase(source);
 
 			return false;

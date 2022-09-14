@@ -15,7 +15,7 @@ int* f2() {
 
 int main() {
 
-	// int* xptr = f1();]
+	// int* xptr = f1();
 	// cout << *xptr << endl; // this is an undefined behaviour
 
 	int* xptr = f2();

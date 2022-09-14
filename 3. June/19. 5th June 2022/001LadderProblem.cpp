@@ -16,15 +16,13 @@ int ladder(int n, int k){
 	}
 }
 
-return count;
+	return count;
 }
 
 int main(){
-	int n;
-	cin >> n;
-	
-	int k;
-	cin >> k;
+
+	int n = 4;
+	int k = 3;
 
 	cout << ladder(n, k) << endl;
 

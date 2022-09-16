@@ -44,7 +44,7 @@ int main(){
 	int m = 4;
 	int n = 4;
 
-	ratMaze(maze, 0,0) ? cout << "true" : cout << "false";
+	ratMaze(maze, m-1,n-1) ? cout << "true" : cout << "false";
 
 	return 0;
 }

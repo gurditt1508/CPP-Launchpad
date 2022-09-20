@@ -1,6 +1,0 @@
-#ifndef ONLINE_JUDGE
-
-	freopen("CPinput.txt", "r", stdin);
-	freopen("CPoutput.txt", "w", stdout);
-
-#endif

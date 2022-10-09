@@ -14,7 +14,7 @@ using namespace std;
 		}
 	};
 	
-void insertAtHead(int val, node*& head){ //passing by reference
+node* insertAtHead(int val, node* head){ //passing by reference
 	//1. create a new node dynamically 
 	node* n = new node(val);
 	//2. update the next field of the newly created node 
@@ -23,6 +23,7 @@ void insertAtHead(int val, node*& head){ //passing by reference
 
 	//3. make the newly created node as the new head of the linked list
 	head = n;
+	return head;
 }
 
 node* getTail(node* temp){
